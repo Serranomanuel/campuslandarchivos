@@ -24,19 +24,16 @@ def printMatrices(mat):
         print('')
 
 def llenarMatrices(mat, tamaño):
-    menor = 0
-    mayor = tamaño - 1
+    cont =  0
     for f in range(len(mat)):
-
+        
         #print("\nFila #",f+1)
         for c in range(len(mat[f])):
             #contador += 1
             mat[f][c] = 0
-            if f == menor and c == mayor:
+            if cont >= c:
                 mat[f][c] = 1
-                menor += 1
-                mayor -= 1
-
+        cont += 1
             #mat[f][c] = int(input(f"\nmat[{f+1}][{c+1}]"))
             #print(mat[f][c], end=' ')
     print('')
