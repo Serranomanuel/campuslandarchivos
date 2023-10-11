@@ -6,3 +6,4 @@ archivo.writelines(["houston\n", "artemis\n"])
 
 
 archivo.close()
+print("Arch2")
